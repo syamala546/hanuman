@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fixora — Home Services, Fixed.</title>
+<meta name="description" content="Fixora connects you with trusted home service professionals.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="glow g1"></div><div class="glow g2"></div>
+
+<header><nav>
+<a class="logo" href="#"><b>F</b>Fixora</a>
+<div class="links"><a href="#services">Services</a><a href="#how">How it works</a><a href="#pros">Professionals</a><a href="#protection">Protection</a></div>
+<div class="actions"><button class="textBtn" onclick="openAuth()">Login</button><button class="btn small" onclick="openBooking()">Book a Service ↗</button></div>
+<button class="menu" aria-label="menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+</nav></header>
+
+<main>
+<section class="hero">
+<div class="copy">
+<label>● TRUSTED HOME CARE, REDESIGNED</label>
+<h1>Your home has a problem.<br><span>Fixora has the solution.</span></h1>
+<p>From a leaking tap to a broken AC, find verified professionals, transparent pricing and reliable service — all in one place.</p>
+<div class="heroBtns"><a class="btn" href="#book" onclick="openBooking();return false">Book a Service →</a><a class="ghost" href="#services">◉ Explore services</a></div>
+<div class="trust"><div><b>4.9/5</b><small>customer rating</small></div><i></i><div><b>10K+</b><small>services completed</small></div><i></i><div><b>Verified</b><small>professionals</small></div></div>
+</div>
+
+<div class="visual">
+<div class="orb"></div>
+<div class="homeCard">
+<div class="top"><span class="icon">⌂</span><div><b>Smart Home Care</b><small>Everything under one roof</small></div><em>LIVE</em></div>
+<div class="house"><div class="roof"></div><div class="body"><span></span><span></span><i></i></div></div>
+<div class="float"><strong>RK</strong><div><b>Ramesh is on the way</b><small>AC Service · 18 min away</small></div><mark>✓</mark></div>
+<div class="bar"><i></i></div><footer><small>Verified professional</small><b>₹499 est.</b></footer>
+</div>
+<aside class="chip c1">★ 4.9 rated</aside><aside class="chip c2">🛡 100% verified</aside>
+</div>
+</section>
+
+<section class="stats"><div><b>10K+</b><small>Services completed</small></div><div><b>2K+</b><small>Verified professionals</small></div><div><b>4.8★</b><small>Average rating</small></div><div><b>30-Day</b><small>Service protection</small></div></section>
+
+<section id="services" class="section">
+<div class="head"><div><label>WHAT WE FIX</label><h2>One platform.<br><span>Every home service.</span></h2></div><p>Tell us what your home needs. We connect you with the right professional, at the right time, with a clear estimate.</p></div>
+<div class="grid">
+<a class="card" href="#book" onclick="openBooking();return false"><strong>⚡</strong><h3>Electrical</h3><p>Wiring, switches, fans & more</p><span>Explore →</span></a>
+<a class="card" href="#book" onclick="openBooking();return false"><strong>◌</strong><h3>Plumbing</h3><p>Leaks, taps, pipes & fittings</p><span>Explore →</span></a>
+<a class="card" href="#book" onclick="openBooking();return false"><strong>❄</strong><h3>AC & Cooling</h3><p>Service, repair & installation</p><span>Explore →</span></a>
+<a class="card" href="#book" onclick="openBooking();return false"><strong>✦</strong><h3>Cleaning</h3><p>Deep, kitchen, bathroom & more</p><span>Explore →</span></a>
+<a class="card" href="#book" onclick="openBooking();return false"><strong>⌁</strong><h3>Appliances</h3><p>Washing machine, fridge & RO</p><span>Explore →</span></a>
+<a class="card" href="#book" onclick="openBooking();return false"><strong>▱</strong><h3>Painting</h3><p>Interior, exterior & touch-ups</p><span>Explore →</span></a>
+<a class="card" href="#book" onclick="openBooking();return false"><strong>⌘</strong><h3>Carpentry</h3><p>Furniture, doors & repairs</p><span>Explore →</span></a>
+<a class="card" href="#book" onclick="openBooking();return false"><strong>+</strong><h3>More Services</h3><p>Tell us what you need</p><span>Explore →</span></a>
+</div></section>
+
+<section id="book" class="diagnose">
+<div><label>FIXORA ASSISTANT</label><h2>Don't know what service you need?</h2><p>Describe the problem in your own words. Fixora helps you identify the right service and gives you a starting estimate.</p><p class="checks">✓ No technical terms &nbsp; ✓ Transparent estimate &nbsp; ✓ Verified pros</p></div>
+<div class="chat"><div class="chatHead"><b>✦ Fixora Assistant</b><span>●</span></div><div class="msg bot">Hi! What's happening at home?</div><div class="msg user">My AC is running but it isn't cooling properly.</div><div class="msg bot"><b>Likely service: AC inspection</b><br>Estimated range: ₹399–₹699</div><div class="chatInput"><input id="problemInput" placeholder="Describe your problem..."><button onclick="askAssistant()">→</button></div></div>
+</section>
+
+<section id="how" class="section">
+<div class="center"><label>HOW IT WORKS</label><h2>From problem to <span>fixed.</span></h2></div>
+<div class="steps">
+<div><b>01</b><strong>⌁</strong><h3>Tell us the problem</h3><p>Describe it in simple words.</p></div>
+<div><b>02</b><strong>◈</strong><h3>Get an estimate</h3><p>See a transparent starting range.</p></div>
+<div><b>03</b><strong>✓</strong><h3>Choose your pro</h3><p>Compare verified professionals.</p></div>
+<div><b>04</b><strong>⌂</strong><h3>Relax. We handle it.</h3><p>Track, pay and keep your history.</p></div>
+</div></section>
+
+<section id="pros" class="section">
+<div class="head"><div><label>THE FIXORA NETWORK</label><h2>People who<br><span>fix it right.</span></h2></div><a class="link" href="#">Become a professional →</a></div>
+<div class="pros">
+<article><div class="avatar">RK</div><em>✓ Verified</em><h3>Ramesh Kumar</h3><p>AC & Appliance Specialist</p><small>★ 4.9 · 328 jobs · 3 yrs</small><button>View Profile →</button></article>
+<article><div class="avatar a2">SM</div><em>✓ Verified</em><h3>Sneha M.</h3><p>Electrician & Smart Home</p><small>★ 4.8 · 214 jobs · 4 yrs</small><button>View Profile →</button></article>
+<article><div class="avatar a3">AK</div><em>✓ Verified</em><h3>Arjun Kumar</h3><p>Plumbing Specialist</p><small>★ 4.9 · 401 jobs · 5 yrs</small><button>View Profile →</button></article>
+</div></section>
+
+<section id="protection" class="protection">
+<div><label>SERVICE PROTECTION</label><h2>Good service shouldn't<br><span>come with surprises.</span></h2><p>Digital invoices, clear estimates, verified professionals and service protection designed to keep the experience simple.</p></div>
+<div class="features">
+<p><b>01</b><strong>Transparent pricing</strong><small>Know the estimated range before work begins.</small></p>
+<p><b>02</b><strong>Verified professionals</strong><small>Identity and profile checks help build trust.</small></p>
+<p><b>03</b><strong>Service history</strong><small>Keep every repair, invoice and warranty in one place.</small></p>
+</div></section>
+
+<section class="cta"><label>READY WHEN YOU ARE</label><h2>Your home deserves<br><span>better service.</span></h2><p>Book a trusted professional in a few simple steps.</p><a class="btn" href="#book" onclick="openBooking();return false">Book a Service ↗</a></section>
+</main>
+
+<footer><div><a class="logo" href="#"><b>F</b>Fixora</a><p>Making home care simple, reliable and transparent.</p></div><div class="flinks"><a href="#services">Services</a><a href="#how">How it works</a><a href="#pros">Professionals</a><a href="#">Help</a></div><small>© 2026 Fixora. All rights reserved.</small></footer>
+
+<div id="modal" class="modal"><div class="modalBox"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<script src="script.js"></script>
+
+</body>
+</html>
